@@ -1,73 +1,152 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 ---
 <Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			Check out the <code>src/pages</code> directory to get started.<br/>
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card href="https://docs.astro.build/" title="Documentation" body="Learn how Astro works and explore the official API docs." /> 
-			<Card href="https://astro.build/integrations/" title="Integrations" body="Supercharge your project with new frameworks and libraries." /> 
-			<Card href="https://astro.build/themes/" title="Themes" body="Explore a galaxy of community-built starter themes." /> 
-			<Card href="https://astro.build/chat/" title="Chat" body="Come say hi to our amazing Discord community. ❤️" />
-		</ul>
-	</main>
+  <main>
+    <!-- Hero -->
+    <section class="py-24">
+      <div class="container mx-auto text-center">
+        <h1 class="w-2/3 mx-auto leading-tight">
+          The missing <i>Push</i> service for <span class="text-primary-500">RSS</span> feeds
+        </h1>
+        <p class="w-2/4 mx-auto mt-5 text-xl">
+          Monitor your RSS/Atom/JSON feeds and get notified through webhooks on feed updates.
+        </p>
+        <div class="mt-7 inline-flex items-center">
+          <a
+            href="/"
+            class="px-6 py-3 font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 focus:outline-none"
+          >Try for free</a>
+          <a
+            href="/"
+            class="px-6 py-3 ml-3 font-medium text-gray-900 focus:outline-none bg-white rounded-lg border border-gray-300 hover:bg-gray-100 hover:text-primary-600 focus:z-10 focus:ring-4 focus:ring-gray-200"
+          >View plans</a>
+        </div>
+        <p class="italic mt-3 text-gray-700">7-day free trial. No credit card requried.</p>
+      </div>
+      <div class="mt-8">
+        <img src="/octopus.png" alt="octopus" class="w-2/3 mx-auto">
+      </div>
+    </section>
+
+    <!-- Made for you -->
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto text-center">
+        <h3 class="mb-12">Made for you —</h3>
+        <div class="grid grid-cols-3 gap-x-16">
+          <div class="p-10 text-center bg-white rounded-xl">
+            <img src="/icons/code.svg" alt="Code" class="w-10 mx-auto text-primary-600">
+            <h6 class="mt-6">Developers</h6>
+            <p class="mt-2 text-center">
+              Build amazing apps using the feeder api without having to spend your effort on managing feed infrastructure
+            </p>
+          </div>
+          <div class="p-10 text-center bg-white rounded-xl">
+            <img src="/icons/magnifying-glass.svg" alt="Code" class="w-10 mx-auto text-primary-600">
+            <h6 class="mt-6">Reseachers</h6>
+            <p class="mt-2 text-center">
+              Track trends and developments in your areas of interest for research and analysis across various sources
+            </p>
+          </div>
+          <div class="p-10 text-center bg-white rounded-xl">
+            <img src="/icons/briefcase.svg" alt="Code" class="w-10 mx-auto text-primary-600">
+            <h6 class="mt-6">Businesses</h6>
+            <p class="mt-2 text-center">
+              Stay on pace with your competitors by following industry tends and what your competitors are doing
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <section class="py-32">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 gap-x-4">
+          <div class="flex col-span-4">
+            <div class="grow self-center">
+              <h2 class="mb-4 font-semibold">Subscribe to wide range of feeds across the web</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+              </p>
+            </div>
+          </div>
+          <div class="col-start-6 col-span-7">
+            <img src="/add-subscription.png" alt="Add Subscription" class="border border-primary-200 rounded-[10px]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manage subscriptions -->
+    <section class="py-32 bg-gray-100">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 gap-x-4">
+          <div class="flex col-span-4">
+            <div class="grow self-center">
+              <h2 class="mb-4 font-semibold">Manage all your subscriptions in one place</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+              </p>
+            </div>
+          </div>
+          <div class="col-start-6 col-span-7">
+            <img src="/manage-subscriptions.png" alt="Manage Subscriptions" class="border border-primary-200 rounded-[10px]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Track deliveries -->
+    <section class="py-32">
+      <div class="container mx-auto">
+        <div class="grid grid-cols-12 gap-x-4">
+          <div class="flex col-span-4">
+            <div class="grow self-center">
+              <h2 class="mb-4 font-semibold">Track and debug feed updates</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+              </p>
+            </div>
+          </div>
+          <div class="col-start-6 col-span-7">
+            <img src="/deliveries.png" alt="Manage Subscriptions" class="border border-primary-200 rounded-[10px]">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to action -->
+    <section class="py-36">
+      <div class="container mx-auto">
+        <div class="w-2/3 mx-auto text-center">
+          <h1 class="mb-8">Get your free account now</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+          </p>
+          <div class="mt-12 inline-flex items-center">
+            <a
+              href="/"
+              class="px-6 py-3 font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 focus:outline-none"
+            >Try for free</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12">
+      <div class="container mx-auto">
+        <div class="w-2/5 mx-auto">
+          <div class="flex justify-between">
+            <a href="/" class="text-lg text-center">About</a>
+            <a href="/" class="text-lg text-center">Pricing</a>
+            <a href="/" class="text-lg text-center">Blog</a>
+            <a href="/" class="text-lg text-center">Terms</a>
+            <a href="/" class="text-lg text-center">Privacy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
 </Layout>
-
-<style>
-	:root {
-		--astro-gradient: linear-gradient(0deg,#4F39FA, #DA62C4);
-	}
-
-	h1 {
-		margin: 2rem 0;
-	}
-
-	main {
-		margin: auto;
-    	padding: 1em;
-		max-width: 60ch;
-	}
-
-	.text-gradient {
-		font-weight: 900;
-		background-image: var(--astro-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 100% 200%;
-		background-position-y: 100%;
-		border-radius: 0.4rem;
-		animation: pulse 4s ease-in-out infinite;
-	}
-
-	@keyframes pulse {
-		0%, 100% { background-position-y: 0%; }
-		50% { background-position-y: 80%; }
-	}
-
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		background: #4F39FA;
-		padding: 1.0rem;
-		border-radius: 0.4rem;
-		color: var(--color-bg);
-	}
-
-	.instructions code {
-		font-size: 0.875em;
-		border: 0.1em solid var(--color-border);
-		border-radius: 4px;
-		padding: 0.15em 0.25em;
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
