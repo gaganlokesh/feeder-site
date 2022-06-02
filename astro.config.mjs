@@ -8,5 +8,10 @@ export default defineConfig({
     tailwind({
       config: { applyBaseStyles: false },
     })
-  ]
+  ],
+  vite: {
+    ssr: {
+      external: ["svgo"]
+    }
+  }
 });
