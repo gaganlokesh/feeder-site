@@ -66,10 +66,31 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-12 gap-x-4">
           <div class="flex col-span-4">
             <div class="grow self-center">
-              <h2 class="mb-4 font-semibold">Subscribe to wide range of feeds across the web</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+              <div class="mb-5 flex items-center">
+                <Icon name="rss" class="w-8 text-[#EA580C]" />
+                <span class="mx-3.5 text-xl font-medium text-gray-300">+</span>
+                <Icon name="google" class="w-7 text-[#4285F4]" />
+                <span class="mx-3.5 text-xl font-medium text-gray-300">+</span>
+                <Icon name="reddit" class="w-8 text-[#FF5700]" />
+              </div>
+              <h2 class="mb-6 font-semibold">Subscribe to feeds across the web</h2>
+              <p class="mb-4 text-lg">
+                Easily follow feeds from any source, directly from the UI.
               </p>
+              <ul class="text-lg space-y-2">
+                <li class="inline-flex">
+                  <Icon name="check" class="w-6 mr-2 text-primary-500" />
+                  Websites with RSS feeds
+                </li>
+                <li class="inline-flex">
+                  <Icon name="check" class="w-6 mr-2 text-primary-500" />
+                  <span class="leading-tight">Kewords or phrases mentioned in the news</span>
+                </li>
+                <li class="inline-flex">
+                  <Icon name="check" class="w-6 mr-2 text-primary-500" />
+                  Subreddits, topics and users on Reddit
+                </li>
+              </ul>
             </div>
           </div>
           <div class="col-start-6 col-span-7">
@@ -85,9 +106,10 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-12 gap-x-4">
           <div class="flex col-span-4">
             <div class="grow self-center">
-              <h2 class="mb-4 font-semibold">Manage all your subscriptions in one place</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+              <h2 class="mb-6 font-semibold">Manage all your subscriptions in one place</h2>
+              <p class="text-lg">
+                Keep track of feeds you have subscribed to and their status. View, update and even unsubscribe any time from the UI.
+                You can also pause or resume updates from being delivered to webhooks on a per feed basis.
               </p>
             </div>
           </div>
@@ -104,9 +126,11 @@ import Layout from '../layouts/Layout.astro';
         <div class="grid grid-cols-12 gap-x-4">
           <div class="flex col-span-4">
             <div class="grow self-center">
-              <h2 class="mb-4 font-semibold">Track and debug feed updates</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pharetra nullam id egestas feugiat pulvinar. Nisi quam nec est ultrices pretium sit nec, pellentesque.
+              <h2 class="mb-6 font-semibold">Track and debug feed updates</h2>
+              <p class="text-lg">
+                We keep a log of all the feed updates we deliver to your webhooks.
+                You can view the status of each delivery and see the full payload delivered to your webhook.
+                You can even resend the payload to your webhook in case the delivery failed.
               </p>
             </div>
           </div>
