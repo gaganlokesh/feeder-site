@@ -6,7 +6,8 @@ module.exports = {
     colors: {
       primary: colors.indigo,
       gray: colors.gray,
-      white: colors.white
+      white: colors.white,
+      emerald: colors.emerald,
     },
     container: {
       padding: {
