@@ -15,8 +15,8 @@ import Layout from '../layouts/Layout.astro';
         <p class="mb-16 text-xl text-center text-gray-600">
           Try any paid plan for free for 7 days. No credit card required.
         </p>
-        <div class="grid grid-cols-12 gap-x-6">
-          <div class="col-span-3 border rounded-lg">
+        <div class="grid grid-cols-12 gap-6">
+          <div class="col-span-12 border rounded-lg md:col-span-6 lg:col-span-3">
             <div class="p-6">
               <h6 class="mb-4 font-semibold">Hobby</h6>
               <p class="text-gray-600">All the basics you need to get started</p>
@@ -51,7 +51,7 @@ import Layout from '../layouts/Layout.astro';
               </div>
             </div>
           </div>
-          <div class="col-span-3 border rounded-lg">
+          <div class="col-span-12 border rounded-lg md:col-span-6 lg:col-span-3">
             <div class="p-6">
               <h6 class="mb-4 font-semibold">Freelancer</h6>
               <p class="text-gray-600">All the basics you need to get started</p>
@@ -86,7 +86,7 @@ import Layout from '../layouts/Layout.astro';
               </div>
             </div>
           </div>
-          <div class="col-span-3 border rounded-lg">
+          <div class="col-span-12 border rounded-lg md:col-span-6 lg:col-span-3">
             <div class="p-6">
               <h6 class="mb-4 font-semibold">Startup</h6>
               <p class="text-gray-600">All the basics you need to get started</p>
@@ -121,7 +121,7 @@ import Layout from '../layouts/Layout.astro';
               </div>
             </div>
           </div>
-          <div class="col-span-3 border rounded-lg">
+          <div class="col-span-12 border rounded-lg md:col-span-6 lg:col-span-3">
             <div class="p-6">
               <h6 class="mb-4 font-semibold">Enterprise</h6>
               <p class="text-gray-600">All the basics you need to get started</p>
@@ -157,9 +157,6 @@ import Layout from '../layouts/Layout.astro';
             </div>
           </div>
         </div>
-        <div>
-
-        </div>
       </div>
     </section>
 
@@ -168,28 +165,28 @@ import Layout from '../layouts/Layout.astro';
       <div class="container mx-auto">
         <h2 class="mb-12">Pricing FAQ</h2>
         <div class="grid grid-cols-8 gap-6">
-          <div class="col-span-4 p-6 bg-white rounded-lg">
+          <div class="col-span-8 p-4 bg-white rounded-lg md:col-span-4 md:p-6">
             <h6 class="mb-4 font-semibold">What is feeder?</h6>
             <p class="text-lg">
               Feeder is a service that allows you to subscribe to RSS/ATOM/JSON feeds
               and notify you via webhooks when new content is available.
             </p>
           </div>
-          <div class="col-span-4 p-6 bg-white rounded-lg">
+          <div class="col-span-8 p-4 bg-white rounded-lg md:col-span-4 md:p-6">
             <h6 class="mb-4 font-semibold">Is free trial available for all paid plans?</h6>
             <p class="text-lg">
               Yes, we offer 7-day free trial for all paid plans without any payment required.
               You can subscribe to a plan by making a payment after the trial period.
             </p>
           </div>
-          <div class="col-span-4 p-6 bg-white rounded-lg">
+          <div class="col-span-8 p-4 bg-white rounded-lg md:col-span-4 md:p-6">
             <h6 class="mb-4 font-semibold">How can I pay?</h6>
             <p class="text-lg">
               We currently only accept payments via PayPal. You can set your PayPal account
               in billings portal and pay for your subscription.
             </p>
           </div>
-          <div class="col-span-4 p-6 bg-white rounded-lg">
+          <div class="col-span-8 p-4 bg-white rounded-lg md:col-span-4 md:p-6">
             <h6 class="mb-4 font-semibold">How do I cancel my subscripition?</h6>
             <p class="text-lg">
               You can cancel your subscription directly from your account.
@@ -197,13 +194,13 @@ import Layout from '../layouts/Layout.astro';
               you can re-subscribe back from your account.
             </p>
           </div>
-          <div class="col-span-4 p-6 bg-white rounded-lg">
+          <div class="col-span-8 p-4 bg-white rounded-lg md:col-span-4 md:p-6">
             <h6 class="mb-4 font-semibold">Do you offer refunds?</h6>
             <p class="text-lg">
               No, we do not offer refunds. Please refer to terms and conditions for more details.
             </p>
           </div>
-          <div class="col-span-4 p-6 bg-white rounded-lg">
+          <div class="col-span-8 p-4 bg-white rounded-lg md:col-span-4 md:p-6">
             <h6 class="mb-4 font-semibold">How do I download my invoices?</h6>
             <p class="text-lg">
               You'll find all your invoices in your account in the billing section.
@@ -215,9 +212,9 @@ import Layout from '../layouts/Layout.astro';
     </section>
 
     <!-- Call to action -->
-    <section class="py-44">
+    <section class="py-52 sm:py-44">
       <div class="container mx-auto">
-        <div class="w-2/3 mx-auto text-center">
+        <div class="mx-auto text-center lg:w-2/3">
           <h1 class="mb-8">Need help with plans?</h1>
           <p class="text-lg text-gray-600">
             Feel free to contact us if you have any questions or suggestions about our product. Before contacting support, please review the FAQ above.

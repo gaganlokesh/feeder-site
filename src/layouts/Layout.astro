@@ -27,7 +27,9 @@ const { title } = Astro.props as Props;
           </div>
           <div class="flex items-center">
             <a href="/" class="px-5 py-2.5 mr-3 font-medium text-gray-700 rounded-lg hover:bg-gray-100">Login</a>
-            <a href="/" class="px-5 py-2.5 font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 focus:outline-none">Get started</a>
+            <a href="/" class="hidden px-5 py-2.5 font-medium text-white bg-primary-600 rounded-lg hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 focus:outline-none sm:block">
+              Get started
+            </a>
           </div>
         </div>
       </div>
@@ -35,14 +37,11 @@ const { title } = Astro.props as Props;
     <slot />
     <footer class="py-12">
       <div class="container mx-auto">
-        <div class="w-2/5 mx-auto">
-          <div class="flex justify-between">
-            <a href="/" class="text-lg text-center">About</a>
-            <a href="/" class="text-lg text-center">Pricing</a>
-            <a href="/" class="text-lg text-center">Blog</a>
-            <a href="/" class="text-lg text-center">Terms</a>
-            <a href="/" class="text-lg text-center">Privacy</a>
-          </div>
+        <div class="text-center space-x-6 lg:space-x-10">
+          <a href="/" class="text-lg">About</a>
+          <a href="/pricing" class="text-lg">Pricing</a>
+          <a href="/" class="text-lg">Terms</a>
+          <a href="/" class="text-lg">Privacy</a>
         </div>
       </div>
     </footer>
