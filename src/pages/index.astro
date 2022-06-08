@@ -24,9 +24,12 @@ import Layout from '../layouts/Layout.astro';
           >View plans</a>
         </div>
         <p class="italic mt-3 text-gray-700">7-day free trial. No credit card requried.</p>
-      </div>
-      <div class="mt-8">
-        <img src="/octopus.png" alt="octopus" class="w-2/3 mx-auto">
+        <div class="mt-8 w-4/5 mx-auto 2xl:w-2/3">
+          <picture>
+            <source srcset="octopus-sm.png" media="(max-width: 767px)">
+            <img src="octopus.png" alt="Subscribe to feeds and get notified via webhook">
+          </picture>
+        </div>
       </div>
     </section>
 
